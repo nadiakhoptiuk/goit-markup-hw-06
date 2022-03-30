@@ -377,22 +377,43 @@
                 </svg>
             </button>
 
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
             <form action="">
-                <label class="label top" for="name">Имя</label>
-                <input class="input name" type="text" id="name">
+                <div class="form-field">
+                    <label class="label top" for="name">Имя</label>
+                    <span class="modal-icon-span">
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#modal-name"></use>
+                        </svg>
+                    </span>
+                    <input class="input name" type="text" id="name">
+                </div>
 
-                <label class="label top" for="tel">Телефон</label>
-                <input class="input" type="tel" id="tel">
+                <div class="form-field">
+                    <label class="label top" for="tel">Телефон</label>
+                    <span class="modal-icon-span">
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#modal-phone"></use>
+                        </svg>
+                    </span>
+                    <input class="input" type="tel" id="tel">
+                </div>
 
-                <label class="label top" for="mail">Почта</label>
-                <input class="input" type="email" id="mail">
+                <div class="form-field">
+                    <label class="label top" for="mail">Почта</label>
+                    <span class="modal-icon-span">
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#modal-letter"></use>
+                        </svg>
+                    </span>
+                    <input class="input" type="email" id="mail">
+                </div>
 
                 <label class="label top" for="comment">Комментарий</label>
                 <textarea class="comment" name="" id="comment" rows="6" placeholder="Введите текст"></textarea>
 
-                <div class="form-field">
+                <div class="form-field-accept">
                     <input class="checkbox" type="checkbox" name="accept" id="accept">
                     <label class="label accept" for="accept">Соглашаюсь с рассылкой и принимаю <a href="" class="contract">Условия договора</a></label>
                 </div>
