@@ -858,6 +858,10 @@
   cursor: pointer;
 }
 
+.contract {
+  color: var(--accent-text-color);
+}
+
 .modal .button {
   padding: 10px 55px;
 
