@@ -610,6 +610,11 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.subscribe-input:focus {
+  border-color: var(--accent-text-color);
+  color: var(--accent-text-color);
+}
+
 .subscribe .button-subscribe {
   display: flex;
   justify-content: center;
@@ -921,6 +926,10 @@
 
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.comment:focus {
+  border-color: var(--accent-text-color);
 }
 
 .checkbox {
