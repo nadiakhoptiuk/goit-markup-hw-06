@@ -594,9 +594,7 @@
 
 .subscribe-input {
   margin-right: 12px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  padding: 15px 16px;
   width: 358px;
   height: 50px;
 
@@ -613,6 +611,7 @@
 .subscribe-input:focus {
   border-color: var(--accent-text-color);
   color: var(--accent-text-color);
+  outline: none;
 }
 
 .subscribe .button-subscribe {
@@ -861,6 +860,10 @@
 
 /*---------------- Form ----------------*/
 
+.form:focus-within {
+  outline: none;
+}
+
 .form-field {
   flex-direction: column;
   align-items: flex-start;
@@ -888,6 +891,16 @@
   letter-spacing: 0.03em;
 }
 
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+}
+
 .input {
   width: 100%;
   height: 40px;
@@ -908,6 +921,7 @@
 
 .form-field .input:focus {
   border-color: var(--accent-text-color);
+  outline: none;
 }
 
 .form-container {
@@ -930,11 +944,49 @@
 
 .comment:focus {
   border-color: var(--accent-text-color);
+  outline: none;
+}
+
+.checkbox-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.label-accept {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-text-color);
+  background-origin: border-box;
+  border-color: var(--accent-text-color);
 }
 
 .checkbox {
-  margin-right: 7px;
-  cursor: pointer;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .contract {
@@ -944,19 +996,4 @@
 .modal .button {
   display: block;
   margin: 0 auto;
-}
-
-.modal-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  width: 18px;
-  height: 18px;
-}
-
-.form-field-accept {
-  margin-bottom: 30px;
-  text-align: center;
 }
