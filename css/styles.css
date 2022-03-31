@@ -931,6 +931,7 @@
 }
 
 .form-container {
+  display: block;
   position: relative;
 }
 
