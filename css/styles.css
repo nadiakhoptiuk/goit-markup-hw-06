@@ -865,10 +865,8 @@
 }
 
 .form-field {
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
   margin-bottom: 10px;
-  color: var(--accent-text-color);
 }
 
 .label {
@@ -879,7 +877,8 @@
 }
 
 .label.top {
-  display: block;
+  display: inline-block;
+
   margin-bottom: 4px;
 
   letter-spacing: 0.01em;
@@ -916,7 +915,7 @@
 }
 
 .form-field .input:focus + .modal-icon {
-  fill: currentColor;
+  fill: var(--accent-text-color);
 }
 
 .form-field .input:focus {
