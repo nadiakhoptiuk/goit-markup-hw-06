@@ -56,7 +56,7 @@
         <section class="hero section">
             <div class="overlay">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <button type="button" class="hero button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
     
@@ -370,7 +370,8 @@
 
                 <div class="subcribe-form">
                     <input class="subscribe-input" name="email" type="mail" placeholder="E-mail">
-                    <button class="button button-subscribe" type="submit">Подписаться
+                    <button class="button button-subscribe" type="submit">
+                        Подписаться
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#plane"></use>
                         </svg>
@@ -392,35 +393,35 @@
 
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
-            <form action="">
+            <form>
                 <div class="form-field">
                     <label class="label top" for="name">Имя</label>
-                    <span class="modal-icon-span">
+                    <div class="form-container">
+                        <input class="input name" type="text" id="name">
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-name"></use>
                         </svg>
-                    </span>
-                    <input class="input name" type="text" id="name">
+                    </div>
                 </div>
 
                 <div class="form-field">
                     <label class="label top" for="tel">Телефон</label>
-                    <span class="modal-icon-span">
+                    <div class="form-container">
+                        <input class="input" type="tel" id="tel">
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-phone"></use>
                         </svg>
-                    </span>
-                    <input class="input" type="tel" id="tel">
+                    </div>
                 </div>
 
                 <div class="form-field">
                     <label class="label top" for="mail">Почта</label>
-                    <span class="modal-icon-span">
+                    <div class="form-container">
+                        <input class="input" type="email" id="mail">
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-letter"></use>
                         </svg>
-                    </span>
-                    <input class="input" type="email" id="mail">
+                    </div>
                 </div>
 
                 <label class="label top" for="comment">Комментарий</label>
