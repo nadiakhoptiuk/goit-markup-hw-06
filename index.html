@@ -395,11 +395,10 @@
 
             <form class="form">
 
-                
                 <label class="form-field">
                     <span class="label top">Имя</span> 
                     <div class="form-container">
-                        <input class="input name" type="text" required>
+                        <input class="input name" name="name" type="text" required>
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-name"></use>
                         </svg>
@@ -410,7 +409,7 @@
                 <label class="form-field">
                     <span class="label top">Телефон</span>
                     <div class="form-container">
-                        <input class="input" type="tel" required minlength="13" maxlength="13">
+                        <input class="input" name="phone-number" type="tel" required minlength="13" maxlength="13">
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-phone"></use>
                         </svg>
@@ -421,7 +420,7 @@
                 <label class="form-field">
                     <span class="label top">Почта</span>
                     <div class="form-container">
-                        <input class="input" type="email">
+                        <input class="input" type="email" name="e-mail">
                         <svg class="modal-icon">
                             <use href="./images/icons.svg#modal-letter"></use>
                         </svg>

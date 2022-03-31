@@ -26,8 +26,6 @@
   --social-icon-color: rgba(175, 177, 184, 1);
   --primary-border-color: #ececec;
   --secondary-border-color: #eeeeee;
-
-  --border-modal-input: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .page {
@@ -605,12 +603,14 @@
 
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:focus {
   border-color: var(--accent-text-color);
-  color: var(--accent-text-color);
   outline: none;
 }
 
@@ -856,6 +856,8 @@
 .close-icon {
   width: 18px;
   height: 18px;
+  fill: var(--black-text-color-logo);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---------------- Form ----------------*/
@@ -898,6 +900,8 @@
 
   width: 18px;
   height: 18px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input {
@@ -911,7 +915,10 @@
   letter-spacing: 0.01em;
 
   border-radius: 4px;
-  border: var(--border-modal-input);
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field .input:focus + .modal-icon {
@@ -929,7 +936,6 @@
 
 .form-field-comment {
   display: block;
-  /* max-height: max-content; */
   margin-bottom: 20px;
 }
 
@@ -938,9 +944,12 @@
   padding: 12px 16px;
   width: 100%;
 
-  border: var(--border-modal-input);
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment::placeholder {
@@ -964,6 +973,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border: 2px solid var(--primary-text-color);
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -992,13 +1005,18 @@
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
   background-color: #ffffff;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contract {
   color: var(--accent-text-color);
 }
 
-.modal .button {
+.form .button {
   display: block;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
