@@ -974,6 +974,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: var(--secondary-text-color);
 }
 
 .checkbox:focus + .checkbox-icon {
