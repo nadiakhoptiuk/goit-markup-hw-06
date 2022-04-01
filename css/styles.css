@@ -977,7 +977,7 @@
 }
 
 .checkbox:focus + .checkbox-icon {
-  outline: 2px solid var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
 }
 
 .checkbox:checked + .checkbox-icon {
